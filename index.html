@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Countries</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./fontawesome-free-6.2.1-web/css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="./fontawesome-free-6.2.1-web/css/brands.css">
+	<link rel="stylesheet" type="text/css" href="./fontawesome-free-6.2.1-web/css/solid.css">
+</head>
+<body onload="loadHome('all')">
+
+	<div class="models">
+
+		<a class="ahrefCountrie">
+			<div id="countrie--card" class="countrie--card card_white">
+				<div class="flag--area">
+					<img class="flag--img" src="">
+				</div>
+				<div class="info--area">
+					<h2 class="countrie--name"></h2>
+					<p class="populationLabel">Population: <span class="population--countrie"></span></p>
+					<p class="regionLabel">Region: <span class="region--countrie"></span></p>
+					<p class="capitalLabel">Capital: <span class="capital--countrie"></span></p>
+				</div>
+			</div>
+		</a>
+
+	</div>
+
+	<header class="">
+		<a class="title" href="./index.html">Where in the world</a>
+		<button onclick="changeThemeHome()" class="styleChange"><i class="fa-regular fa-moon"></i>Dark Mode</button>
+	</header>
+
+	<section class="content--area">
+
+		<section class="filterInputs">
+			<div class="inputSearch_Area">
+				<i class="fa-regular fa-magnifying-glass"></i>
+				<input id="inputSearch" placeholder="Search for a country..." class="inputSearchWhite" onchange="searchCountries()" type="search" name="">
+			</div>
+			<select id="inputSelect" class="inputSelect inputSelect_white" onchange="selectRegion()">
+				<option value="all">All Regions</option>
+				<option value="africa">Africa</option>
+				<option value="america">América</option>
+				<option value="asia">Asía</option>
+				<option value="europe">Europe</option>
+				<option value="oceania">Oceania</option>
+			</select>
+		</section>
+
+		<section class="countries--area">
+			
+		</section>
+
+	</section>
+
+	<script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
